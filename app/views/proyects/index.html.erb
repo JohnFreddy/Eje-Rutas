@@ -19,8 +19,8 @@
     <% @proyects.each do |proyect| %>
       <tr>
         <td><%= link_to 'Equipo', proyect_engineers_path(proyect) %></td>
-        <td><%= link_to proyect.id, proyect_path(proyect) %></td>
-        <td><%= proyect.name %></td>
+        <td><%= proyect.id %></td>
+        <td><%= link_to proyect.name, proyect_path(proyect) %></td>
         <td><%= proyect.description %></td>
         <td><%= proyect.begindate %></td>
         <td><%= proyect.enddate %></td>

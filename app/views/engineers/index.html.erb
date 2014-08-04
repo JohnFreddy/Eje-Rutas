@@ -17,8 +17,8 @@
   <tbody>
     <% @engineers.each do |engineer| %>
       <tr>
-        <td><%= link_to engineer.id, proyect_engineer_path(@proyect,engineer) %></td>
-        <td><%= engineer.fullname %></td>
+        <td><%= engineer.id %></td>
+        <td><%= link_to engineer.fullname, proyect_engineer_path(@proyect,engineer) %></td>
         <td><%= engineer.dependency %></td>
         <td><%= engineer.studies %></td>
         <td><%= engineer.proyect_id %></td>
